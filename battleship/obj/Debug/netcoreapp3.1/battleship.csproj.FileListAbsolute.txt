@@ -1,0 +1,14 @@
+C:\Users\khenk\Desktop\bataille_naval\battleship\bin\Debug\netcoreapp3.1\battleship.exe
+C:\Users\khenk\Desktop\bataille_naval\battleship\bin\Debug\netcoreapp3.1\battleship.deps.json
+C:\Users\khenk\Desktop\bataille_naval\battleship\bin\Debug\netcoreapp3.1\battleship.runtimeconfig.json
+C:\Users\khenk\Desktop\bataille_naval\battleship\bin\Debug\netcoreapp3.1\battleship.runtimeconfig.dev.json
+C:\Users\khenk\Desktop\bataille_naval\battleship\bin\Debug\netcoreapp3.1\battleship.dll
+C:\Users\khenk\Desktop\bataille_naval\battleship\bin\Debug\netcoreapp3.1\battleship.pdb
+C:\Users\khenk\Desktop\bataille_naval\battleship\obj\Debug\netcoreapp3.1\battleship.csproj.AssemblyReference.cache
+C:\Users\khenk\Desktop\bataille_naval\battleship\obj\Debug\netcoreapp3.1\battleship.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\khenk\Desktop\bataille_naval\battleship\obj\Debug\netcoreapp3.1\battleship.AssemblyInfoInputs.cache
+C:\Users\khenk\Desktop\bataille_naval\battleship\obj\Debug\netcoreapp3.1\battleship.AssemblyInfo.cs
+C:\Users\khenk\Desktop\bataille_naval\battleship\obj\Debug\netcoreapp3.1\battleship.csproj.CoreCompileInputs.cache
+C:\Users\khenk\Desktop\bataille_naval\battleship\obj\Debug\netcoreapp3.1\battleship.dll
+C:\Users\khenk\Desktop\bataille_naval\battleship\obj\Debug\netcoreapp3.1\battleship.pdb
+C:\Users\khenk\Desktop\bataille_naval\battleship\obj\Debug\netcoreapp3.1\battleship.genruntimeconfig.cache
