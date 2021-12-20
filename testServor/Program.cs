@@ -12,14 +12,15 @@ class MyTcpListener
         try
         {
             // Configurer le TcpListener sur le port 13000.
-            Int32 port = 13000;
-            IPAddress localAddr = IPAddress.Parse("127.0.0.1");
+            Int32 port = 50000;
+            IPAddress localAddr = IPAddress.Parse("192.168.1.159");
 
             // TcpListener server = new TcpListener(port);
             server = new TcpListener(localAddr, port);
-
+            Console.WriteLine("ok 1");
             // Commencez à écouter les demandes des clients..
             server.Start();
+            Console.WriteLine("ok 2");
 
             // Tampon pour la lecture des données
             Byte[] bytes = new Byte[256];

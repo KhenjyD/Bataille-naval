@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "18e39539-5e07-4496-8de5-e88f1a2d44d4": {
+      "ProjectGuid": "18e39539-5e07-4496-8de5-e88f1a2d44d4",
+      "DisplayName": "battleship",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
