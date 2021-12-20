@@ -1,13 +1,12 @@
 ﻿using System;
 
-
 namespace battleship
 {
     class Map
     {
-        public int[,] map;
+        public Cell[,] map;
 
-        public Map(int[,] map)
+        public Map(Cell[,] map)
         {
             this.map = map;
         }
@@ -19,7 +18,7 @@ namespace battleship
             {
                 for (int colomn = 0; colomn < map.GetLength(1); colomn++)
                 {
-                    map[row, colomn] = 0;
+                    map[row, colomn] = new Cell(0,0);
                 }
             }
         }
@@ -41,15 +40,15 @@ namespace battleship
                 
                 for (int colomn = 0; colomn < 10; colomn++)
                 {
-                    if(map[row, colomn] == 0)
+                    if(map[row, colomn].state == 0)
                     {
                         Console.Write("[ ]");
                     }
-                    else if (map[row, colomn] == 1)
+                    else if (map[row, colomn].state == 1)
                     {
                         Console.Write("[#]");
                     }
-                    else if (map[row, colomn] == -1)
+                    else if (map[row, colomn].state == -1)
                     {
                         Console.Write("[x]");
                     }
@@ -71,14 +70,16 @@ namespace battleship
             {
                 for(int size = 0; size < ship.size; size++, coordX++)
                 {
-                    map[coordX,coordY] = 1;
+                    map[coordX, coordY].id = ship.id;
+                    map[coordX,coordY].state = 1;
                 }
             }
             else
             {
                 for (int size = 0; size < ship.size; size++, coordY++)
                 {
-                    map[coordX, coordY] = 1;
+                    map[coordX, coordY].id = ship.id;
+                    map[coordX, coordY].state = 1;
                 }
             }
         }
@@ -95,7 +96,7 @@ namespace battleship
                     available = false;
                     break;
                 }
-                else if(map[coordX, coordY] != 0)
+                else if(map[coordX, coordY].state != 0)
                 {
                     available = false;
                     break;

@@ -8,13 +8,15 @@ namespace battleship
     {
         public int id;
         public List<Ship> playerShip;
+        public int shipSank;
         public Map playerMap;
         public Map enemyMap;
 
-        public Player(int id, List<Ship> playerShip, Map playerMap, Map enemyMap)
+        public Player(int id, List<Ship> playerShip, int shipSank, Map playerMap, Map enemyMap)
         {
             this.id = id;
             this.playerShip = playerShip;
+            this.shipSank = shipSank;
             this.playerMap = playerMap;
             this.enemyMap = enemyMap;
         }
@@ -24,7 +26,7 @@ namespace battleship
         {
             bool available;
 
-            if(enemyMap.map[coordX, coordY] == 0 || enemyMap.map[coordX, coordY] == 1)
+            if(enemyMap.map[coordX, coordY].state == 0 || enemyMap.map[coordX, coordY].state == 1)
             {
                 available = true;
             }
@@ -37,7 +39,7 @@ namespace battleship
         }
 
         /* Attaquer les navires du  joueur adverse */
-        public void AttackEnemyShip()
+        public void AttackEnemyShip(Player enemy)
         {
             int coordX, coordY;
             byte[] ascii;
@@ -70,13 +72,27 @@ namespace battleship
                 }
             }
 
-            if (enemyMap.map[coordX, coordY] == 1)
+            if (enemyMap.map[coordX, coordY].state == 1)
             {
-                enemyMap.map[coordX, coordY] = -1;
+                enemyMap.map[coordX, coordY].state = -1;
+                Console.WriteLine("Touché !");
+                foreach(Ship ship in playerShip)
+                {
+                    if(ship.id == enemyMap.map[coordX, coordY].id)
+                    {
+                        ship.size--;
+                        if(ship.size == 0)
+                        {
+                            Console.WriteLine("Coulé !");
+                            enemy.shipSank++;
+                        }
+                    }
+                }
             }
             else
             {
-                enemyMap.map[coordX, coordY] = 2;
+                enemyMap.map[coordX, coordY].state = 2;
+                Console.WriteLine("Raté !");
             }
         }
 
@@ -97,15 +113,15 @@ namespace battleship
 
                 for (int colomn = 0; colomn < 10; colomn++)
                 {
-                    if (playerMap.map[row, colomn] == 0)
+                    if (playerMap.map[row, colomn].state == 0)
                     {
                         Console.Write("[ ]");
                     }
-                    else if (playerMap.map[row, colomn] == 1)
+                    else if (playerMap.map[row, colomn].state == 1)
                     {
                         Console.Write("[#]");
                     }
-                    else if (playerMap.map[row, colomn] == -1)
+                    else if (playerMap.map[row, colomn].state == -1)
                     {
                         Console.Write("[x]");
                     }
@@ -135,15 +151,15 @@ namespace battleship
 
                 for (int colomn = 0; colomn < 10; colomn++)
                 {
-                    if (enemyMap.map[row, colomn] == 0 || enemyMap.map[row, colomn] == 1)
+                    if (enemyMap.map[row, colomn].state == 0 || enemyMap.map[row, colomn].state == 1)
                     {
                         Console.Write("[ ]");
                     }
-                    else if (enemyMap.map[row, colomn] == -1)
+                    else if (enemyMap.map[row, colomn].state == -1)
                     {
                         Console.Write("[x]");
                     }
-                    else if(enemyMap.map[row, colomn] == 2)
+                    else if(enemyMap.map[row, colomn].state == 2)
                     {
                         Console.Write("[~]");
                     }
@@ -152,7 +168,7 @@ namespace battleship
             }
         }
 
-        /* Créer et place les navires du joueur sur sa carte*/
+        /* Créer et place les navires du joueur sur sa carte*/ //à corriger
         public void InitPlayerShipOnMap()
         {
             List<int> shipSize = new List<int> { 2 }; //{ 2, 3, 4, 6 }
@@ -223,6 +239,15 @@ namespace battleship
 
                 playerShip.Add(newShip);
                 DisplayPlayerMap();
+            }
+        }
+
+        public void WinEval(Player enemy)
+        {
+            if (enemy.shipSank == enemy.playerShip.Count)
+            {
+                Console.WriteLine("Le Joueur " + id + " a gagné !");
+                Environment.Exit(0);
             }
         }
     }
