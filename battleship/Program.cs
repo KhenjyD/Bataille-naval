@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace battleship
 {
@@ -12,6 +13,7 @@ namespace battleship
             List<Ship> allShip = new List<Ship>();
             List<int> shipSize = new List<int> { 2, 3, 4, 6 };
             int coordX, coordY, direction, size;
+            byte[] ascii;
             map.InitMap();
             map.DisplayMap();
 
@@ -48,9 +50,11 @@ namespace battleship
                     {
                         Console.WriteLine("Choisir Ligne:");
                         coordX = int.Parse(Console.ReadLine());
+                        coordX--;
 
                         Console.WriteLine("Choisir Colonne:");
-                        coordY = int.Parse(Console.ReadLine());
+                        ascii = Encoding.ASCII.GetBytes(Console.ReadLine().ToLower());
+                        coordY = ascii[0] - 97;
 
                         Console.WriteLine("Choisir Direction (Vertical = 0, Horizontal = 1):");
                         direction = int.Parse(Console.ReadLine());
@@ -66,12 +70,12 @@ namespace battleship
                     }
                     catch (Exception)
                     {
-                        Console.WriteLine("Coordonnées erronées.");
+                        Console.WriteLine("Coordonnées erronées. Recommencer.");
                     }
                 }
                 
 
-                Ship newShip = new Ship(size, direction);
+                Ship newShip = new Ship(size, direction, nShip);
                 map.PutShipOnMap(newShip, coordX, coordY);
 
                 allShip.Add(newShip);

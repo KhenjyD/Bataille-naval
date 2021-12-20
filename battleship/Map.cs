@@ -28,13 +28,38 @@ namespace battleship
         /* Affiche la carte avec ses valeurs */
         public void DisplayMap()
         {
-            Console.WriteLine("   0  1  2  3  4  5  6  7  8  9");
+            Console.WriteLine("    A  B  C  D  E  F  G  H  I  J");
             for (int row = 0; row < 10; row++)
             {
-                Console.Write(row + " "); //TO DO: remplacer chiffre par des lettres
+                if(row == 9)
+                {
+                    Console.Write((row + 1) + " "); 
+                }
+                else
+                {
+                    Console.Write(" " + (row + 1) + " ");
+                }
+                
                 for (int colomn = 0; colomn < 10; colomn++)
                 {
-                    Console.Write("[" + map[row, colomn] + "]");
+                    if(map[row, colomn] == 0)
+                    {
+                        Console.Write("[ ]");
+                    }
+                    else if (map[row, colomn] == 1)
+                    {
+                        Console.Write("[#]");
+                    }
+                    else if (map[row, colomn] == -1)
+                    {
+                        Console.Write("[x]");
+                    }
+                    else
+                    {
+                        Console.Write("[~]");
+                    }
+
+
                 }
                 Console.Write("\n");
             }
