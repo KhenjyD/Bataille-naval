@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "4U9CSVskUOsu9XlZ5xO2IHgukyk3MpG9E0oEOBUeBo8HGj9rwjnEa81rE7kRcgwEmCGMIrn43vesLPkhM6hTeg==",
+  "dgSpecHash": "/X6uuK0bufwNaiK2Y1VIV7I5GUsxc38dRCFKjURerETQg6dgiN+YWlE5SaXX1tThCzZlERt4bzSl8SiY7Wqcew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\khenk\\Desktop\\bataille_naval\\battleship\\battleship.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Bataille-naval\\battleship\\battleship.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\paral\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512",
+    "C:\\Users\\paral\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\paral\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\paral\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

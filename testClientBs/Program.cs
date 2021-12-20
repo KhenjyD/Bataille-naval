@@ -4,6 +4,17 @@ using System.IO;
 using System.Net;
 using System.Text;
 
+
+class Program
+{ 
+
+
+
+static void Main(string[] args)
+{
+    Connect("127.0.0.1", "connected");
+}
+
 static void Connect(String server, String message)
 {
     try
@@ -57,4 +68,5 @@ static void Connect(String server, String message)
     Console.Read();
 }
 
+}
 //connection impossible...
