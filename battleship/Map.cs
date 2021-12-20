@@ -60,17 +60,31 @@ namespace battleship
         }
 
         /* Vérifier si une case est disponible */
-        public bool VerifyCoordOnMap(int coordX, int coordY)
+        public bool VerifyCoordOnMap(int coordX, int coordY, int direction, int size)
         {
-            bool available;
+            bool available = true;
 
-            if(map[coordX,coordY] != 0)
+            for (int i = 0; i < size; i++)
             {
-                available = false;
-            }
-            else
-            {
-                available = true;
+                if ( coordX < 0 || coordX > 9 || coordY < 0 || coordY > 9)
+                {
+                    available = false;
+                    break;
+                }
+                else if(map[coordX, coordY] != 0)
+                {
+                    available = false;
+                    break;
+                }
+
+                if (direction == 0)
+                {
+                    coordX++;
+                }
+                else
+                {
+                    coordY++;
+                }
             }
 
             return available;
