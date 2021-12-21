@@ -171,13 +171,13 @@ namespace battleship
         /* Créer et place les navires du joueur sur sa carte*/ //à corriger
         public void InitPlayerShipOnMap()
         {
-            List<int> shipSize = new List<int> { 2 }; //{ 2, 3, 4, 6 }
+            List<int> shipSize = new List<int> { 2, 3, 4, 6 };
             int coordX, coordY, direction, size;
             byte[] ascii;
 
             DisplayPlayerMap();
             Console.WriteLine("Placer vos 4 navires sur les cases disponibles de taille 2, 3, 4 et 6 de long:");
-            for (int nShip = 0; nShip < 1; nShip++) //nship = 4
+            for (int nShip = 0; nShip < 4; nShip++)
             {
                 while (true)
                 {
