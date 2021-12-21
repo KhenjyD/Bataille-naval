@@ -1,0 +1,15 @@
+D:\Bataille-naval\testServor\bin\Debug\net6.0\testServor.exe
+D:\Bataille-naval\testServor\bin\Debug\net6.0\testServor.deps.json
+D:\Bataille-naval\testServor\bin\Debug\net6.0\testServor.runtimeconfig.json
+D:\Bataille-naval\testServor\bin\Debug\net6.0\testServor.dll
+D:\Bataille-naval\testServor\bin\Debug\net6.0\ref\testServor.dll
+D:\Bataille-naval\testServor\bin\Debug\net6.0\testServor.pdb
+D:\Bataille-naval\testServor\obj\Debug\net6.0\testServor.csproj.AssemblyReference.cache
+D:\Bataille-naval\testServor\obj\Debug\net6.0\testServor.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bataille-naval\testServor\obj\Debug\net6.0\testServor.AssemblyInfoInputs.cache
+D:\Bataille-naval\testServor\obj\Debug\net6.0\testServor.AssemblyInfo.cs
+D:\Bataille-naval\testServor\obj\Debug\net6.0\testServor.csproj.CoreCompileInputs.cache
+D:\Bataille-naval\testServor\obj\Debug\net6.0\testServor.dll
+D:\Bataille-naval\testServor\obj\Debug\net6.0\ref\testServor.dll
+D:\Bataille-naval\testServor\obj\Debug\net6.0\testServor.pdb
+D:\Bataille-naval\testServor\obj\Debug\net6.0\testServor.genruntimeconfig.cache

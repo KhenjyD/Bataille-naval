@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "49b3f3fa-54af-439d-94a3-372482a19215": {
+      "ProjectGuid": "49b3f3fa-54af-439d-94a3-372482a19215",
+      "DisplayName": "testServor",
+      "ColorIndex": 0
+    },
+    "a8718656-e76c-4a27-9d3d-f9082cade986": {
+      "ProjectGuid": "a8718656-e76c-4a27-9d3d-f9082cade986",
+      "DisplayName": "testClientBattleship",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Fichiers divers",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

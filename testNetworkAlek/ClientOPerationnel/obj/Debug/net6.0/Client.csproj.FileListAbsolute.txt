@@ -1,0 +1,15 @@
+D:\Bataille-naval\batailleNavalleAlek\Client\bin\Debug\net6.0\Client.exe
+D:\Bataille-naval\batailleNavalleAlek\Client\bin\Debug\net6.0\Client.deps.json
+D:\Bataille-naval\batailleNavalleAlek\Client\bin\Debug\net6.0\Client.runtimeconfig.json
+D:\Bataille-naval\batailleNavalleAlek\Client\bin\Debug\net6.0\Client.dll
+D:\Bataille-naval\batailleNavalleAlek\Client\bin\Debug\net6.0\ref\Client.dll
+D:\Bataille-naval\batailleNavalleAlek\Client\bin\Debug\net6.0\Client.pdb
+D:\Bataille-naval\batailleNavalleAlek\Client\obj\Debug\net6.0\Client.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bataille-naval\batailleNavalleAlek\Client\obj\Debug\net6.0\Client.AssemblyInfoInputs.cache
+D:\Bataille-naval\batailleNavalleAlek\Client\obj\Debug\net6.0\Client.AssemblyInfo.cs
+D:\Bataille-naval\batailleNavalleAlek\Client\obj\Debug\net6.0\Client.csproj.CoreCompileInputs.cache
+D:\Bataille-naval\batailleNavalleAlek\Client\obj\Debug\net6.0\Client.dll
+D:\Bataille-naval\batailleNavalleAlek\Client\obj\Debug\net6.0\ref\Client.dll
+D:\Bataille-naval\batailleNavalleAlek\Client\obj\Debug\net6.0\Client.pdb
+D:\Bataille-naval\batailleNavalleAlek\Client\obj\Debug\net6.0\Client.genruntimeconfig.cache
+D:\Bataille-naval\batailleNavalleAlek\Client\obj\Debug\net6.0\Client.csproj.AssemblyReference.cache
