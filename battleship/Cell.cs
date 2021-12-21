@@ -8,6 +8,7 @@ namespace battleship
     {
         public int id, state;
 
+        /* Cellule de la carte avec sont état */
         public Cell (int id, int state)
         {
             this.id = id;

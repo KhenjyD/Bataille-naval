@@ -242,11 +242,12 @@ namespace battleship
             }
         }
 
-        public void WinEval(Player enemy)
+        /* Vérifie si le joueur a gagné après chaque coup*/
+        public void WinEval(Player enemy, int turn)
         {
             if (enemy.shipSank == enemy.playerShip.Count)
             {
-                Console.WriteLine("Le Joueur " + id + " a gagné !");
+                Console.WriteLine("Le Joueur " + id + " a gagné en " + turn + " !");
                 Environment.Exit(0);
             }
         }
